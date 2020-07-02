@@ -1,0 +1,9 @@
+import requests
+r =requests.get('https://github.com/')
+print (r.text)
+file = open("HTML Data.txt","w")
+ 
+file.write(r.text)
+ 
+ 
+file.close()
